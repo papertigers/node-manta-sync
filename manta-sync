@@ -224,6 +224,8 @@ finder.on('file', function(file, stat) {
    * d.basefile = file.txt (path relative to arg1)
    * d.mantafile = /bahamas10/stor/foo/file.txt
    */
+
+  console.log("MIKE -file: " + file);
   var d = {
     file: file,
     stat: stat,
