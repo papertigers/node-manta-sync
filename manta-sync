@@ -203,6 +203,7 @@ if (args.length !== 2) {
 var client = manta.createBinClient(opts);
 
 var localdir = path.resolve(args[0]);
+console.log("MIKE -localdir: " + localdir);
 var remotedir = client.path(args[1], true);
 
 var finder = new Finder(localdir);
