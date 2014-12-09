@@ -230,6 +230,7 @@ finder.on('file', function(file, stat) {
     basefile: file.substr(localdir.length)
   };
   d.mantafile = path.posix.join(remotedir, d.basefile);
+  console.log("MIKE -basefile: " + d.basefile);
   console.log("MIKE -mantafile: " + d.mantafile);
 
   // check if the file should be excluded
